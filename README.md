@@ -22,6 +22,7 @@ echo "RUN"
 ```
 ```
 
+
 ```shell
 echo "RUN"
 ```
@@ -35,6 +36,7 @@ the line begging.
 /bin/unknown_command
 ```
 ```
+
 
 ```shell
 ## EXAMPLE
