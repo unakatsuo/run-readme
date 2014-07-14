@@ -6,22 +6,29 @@ Self Testable Document Processor
 
 ``run-readme.sh`` executes the [Fenced code
 blocks](https://help.github.com/articles/github-flavored-markdown#fenced-code-blocks)
- text written in the Github fravored markdown.
+ text written in the Github flavored markdown.
 
-Syntax:
+### Synopsis:
 
 ```shell
 run-readme.sh README.md
 ```
 
-The only code blocks with ``shell`` syntax marker are executed:
+### Dependency
 
-```
 ```shell
-echo "RUN"
-```
+which mktemp awk
 ```
 
+### Writing testable document in Markdown format
+
+The only code blocks with ``shell`` syntax marker are executed.
+
+```
+    ```shell
+    echo "RUN"
+    ```
+```
 
 ```shell
 echo "RUN"
@@ -31,12 +38,11 @@ To skip running ``shell`` code blocks, you can put ``## EXAPMLE`` at
 the line begging.
 
 ```
-```shell
-## EXAMPLE
-/bin/unknown_command
+    ```shell
+    ## EXAMPLE
+    /bin/unknown_command
+    ```
 ```
-```
-
 
 ```shell
 ## EXAMPLE
