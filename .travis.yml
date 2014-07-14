@@ -1,0 +1,2 @@
+script:
+  - /bin/bash -x run-readme.sh README.md
