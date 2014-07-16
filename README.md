@@ -1,7 +1,7 @@
 Self Testable Document Processor
 ----------------------------------------
 
-[![Travis](https://travis-ci.org/unakatsuo/run-readme.md.svg?branch=master)](https://travis-ci.org/unakatsuo/run-readme.md)
+[![Travis](https://travis-ci.org/unakatsuo/run-readme.svg?branch=master)](https://travis-ci.org/unakatsuo/run-readme)
 
 
 ``run-readme.sh`` executes the [Fenced code
@@ -54,12 +54,12 @@ Example:
 You can put the line to your test/CI script.
 
 ```
-curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme.md/master/run-readme.sh | bash -s README.md
+curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme/master/run-readme.sh | bash -s README.md
 ```
 
 Or if you are using **travis-ci**, add following line to ``.travis.yml``.
 
 ```yaml
 script:
-  - curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme.md/master/run-readme.sh | bash -s README.md
+  - curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme/master/run-readme.sh | bash -s README.md
 ```

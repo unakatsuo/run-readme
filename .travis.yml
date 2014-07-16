@@ -1,4 +1,4 @@
 language: bash
 script:
   - /bin/bash -x run-readme.sh README.md
-  - curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme.md/master/run-readme.sh | bash -s README.md
+  - curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme/master/run-readme.sh | bash -s README.md
