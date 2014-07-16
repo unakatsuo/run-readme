@@ -34,17 +34,17 @@ The only code blocks with ``shell`` syntax marker are executed.
 echo "RUN"
 ```
 
-To skip running ``shell`` code blocks, you can put ``## EXAPMLE`` at
+To skip running ``shell`` code blocks, you can put ``Example:`` at
 the line begging.
 
 ```
     ```shell
-    ## EXAMPLE
+    Example:
     /bin/unknown_command
     ```
 ```
 
 ```shell
-## EXAMPLE
+Example:
 /bin/unknown_command
 ```

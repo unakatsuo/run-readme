@@ -8,7 +8,7 @@ readme_dir=$(dirname "${README_PATH}")
 function extract_ghm_code_blocks() {
   local readme_path="$1"
   awk 'BEGIN{blkline=0; skip=0; }
-    $0 ~ /^## EXAMPLE:$/ && blkline == 1 { skip=1; }
+    $0 ~ /^Example:$/ && blkline == 1 { skip=1; }
     $0 ~ /^```$/ && blkline > 0 {blkline=0;}
     blkline > 0 && skip == 0 {print $0; blkline++; }
     $0 ~ /^```shell$/ && blkline == 0 {blkline=1; skip=0;}' < $readme_path
