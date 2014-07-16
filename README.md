@@ -10,7 +10,7 @@ blocks](https://help.github.com/articles/github-flavored-markdown#fenced-code-bl
 
 ### Synopsis:
 
-```shell
+```
 run-readme.sh README.md
 ```
 
