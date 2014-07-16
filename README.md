@@ -48,3 +48,18 @@ the line begging.
 Example:
 /bin/unknown_command
 ```
+
+### To incorporate with your project
+
+You can put the line to your test/CI script.
+
+```
+curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme.md/master/run-readme.sh | bash -s README.md
+```
+
+Or if you are using **travis-ci**, add following line to ``.travis.yml``.
+
+```yaml
+script:
+  - curl -sSL https://raw.githubusercontent.com/unakatsuo/run-readme.md/master/run-readme.sh | bash -s README.md
+```
